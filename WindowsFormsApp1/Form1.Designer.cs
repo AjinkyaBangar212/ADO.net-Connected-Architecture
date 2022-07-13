@@ -79,6 +79,7 @@ namespace WindowsFormsApp1
             this.btnSave.TabIndex = 3;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnUpdate
             // 
@@ -88,6 +89,7 @@ namespace WindowsFormsApp1
             this.btnUpdate.TabIndex = 4;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -97,6 +99,7 @@ namespace WindowsFormsApp1
             this.btnDelete.TabIndex = 5;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnSearch
             // 
@@ -106,6 +109,7 @@ namespace WindowsFormsApp1
             this.btnSearch.TabIndex = 6;
             this.btnSearch.Text = "Serach by Id";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // textBox1id
             // 
@@ -146,6 +150,7 @@ namespace WindowsFormsApp1
             this.btnShowAll.TabIndex = 11;
             this.btnShowAll.Text = "Show All Employees";
             this.btnShowAll.UseVisualStyleBackColor = true;
+            this.btnShowAll.Click += new System.EventHandler(this.btnShowAll_Click);
             // 
             // Form1
             // 
