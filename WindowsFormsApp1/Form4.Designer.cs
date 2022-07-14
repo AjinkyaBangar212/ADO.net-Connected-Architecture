@@ -41,6 +41,8 @@ namespace WindowsFormsApp1
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ProductGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,7 +52,7 @@ namespace WindowsFormsApp1
             this.btnShowAll.Name = "btnShowAll";
             this.btnShowAll.Size = new System.Drawing.Size(284, 23);
             this.btnShowAll.TabIndex = 47;
-            this.btnShowAll.Text = "Show All Product";
+            this.btnShowAll.Text = "Show All Product Detail";
             this.btnShowAll.UseVisualStyleBackColor = true;
             this.btnShowAll.Click += new System.EventHandler(this.btnShowAll_Click);
             // 
@@ -152,11 +154,33 @@ namespace WindowsFormsApp1
             this.label1.TabIndex = 36;
             this.label1.Text = "Product Id";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(484, 380);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(284, 23);
+            this.button1.TabIndex = 48;
+            this.button1.Text = "Show Product Name";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(484, 409);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(284, 23);
+            this.button2.TabIndex = 49;
+            this.button2.Text = "Show Product Name & Price";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnShowAll);
             this.Controls.Add(this.ProductGridView);
             this.Controls.Add(this.textBox3price);
@@ -191,5 +215,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

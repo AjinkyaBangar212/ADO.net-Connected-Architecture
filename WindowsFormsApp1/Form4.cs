@@ -207,5 +207,69 @@ namespace WindowsFormsApp1
                 con.Close();
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string qry = "select Name from Product";
+                cmd = new SqlCommand(qry, con);
+
+                con.Open();
+                dr = cmd.ExecuteReader();
+                if (dr.HasRows)
+                {
+                    DataTable dt = new DataTable();
+                    dt.Load(dr);
+                    ProductGridView.DataSource = dt;
+                }
+                else
+                {
+
+                    MessageBox.Show("Record not found");
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string qry = "select Name,Price from Product";
+                cmd = new SqlCommand(qry, con);
+
+                con.Open();
+                dr = cmd.ExecuteReader();
+                if (dr.HasRows)
+                {
+                    DataTable dt = new DataTable();
+                    dt.Load(dr);
+                    ProductGridView.DataSource = dt;
+                }
+                else
+                {
+
+                    MessageBox.Show("Record not found");
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
     }
 }
